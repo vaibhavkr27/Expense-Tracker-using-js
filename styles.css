@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+#balanceDisplay {
+    font-size: 28px;
+    text-align: center;
+    color: #4ecdc4;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #f6d365;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #fda085;
+    box-shadow: 0 0 8px rgba(253, 160, 133, 0.5);
+}
+
+button {
+    background: linear-gradient(135deg, #fda085 0%, #f6d365 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#transactionList {
+    margin-top: 20px;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #e6e6e6;
+    transition: background-color 0.3s;
+}
+
+.transaction:hover {
+    background-color: rgba(78, 205, 196, 0.1);
+}
+
+.income { 
+    color: #4ecdc4; 
+}
+
+.expense { 
+    color: #ff6b6b; 
+}
+
+.transaction button {
+    background: none;
+    color: #ff6b6b;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0;
+    transition: color 0.2s;
+}
+
+.transaction button:hover {
+    color: #ff4757;
+    transform: scale(1.2);
+}
+
+select {
+    background-color: white;
+    color: #333;
+}
